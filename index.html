@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WPC Germany — Hannover Open 2026</title>
+<title>WPC Series — Hannover Open 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -133,11 +133,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(14,26,9,.96);backdrop-filt
 .footer-bar .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
 .partner-badge{font-size:12px;font-weight:700;color:var(--green-d);background:var(--green-l);border-radius:6px;padding:5px 12px;border:1px solid var(--border)}
 
-
-/* LANG SWITCHER */
-.lang-sw{display:flex;gap:5px}
-.lang-sw button{padding:5px 11px;border-radius:20px;border:0.5px solid rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.6);font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s}
-.lang-sw button.active{background:var(--green);color:#fff;border-color:transparent}
 hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
 </style>
 </head>
@@ -146,21 +141,13 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">WPC <span>Germany</span> · Hannover Open</div>
+    <div class="nav-logo">WPC <span>Series</span> Europe</div>
     <div class="nav-links">
       <a href="#schedule">Schedule</a>
       <a href="#categories">Categories</a>
       <a href="#venue">Venue</a>
     </div>
-    <div style="display:flex;align-items:center;gap:10px">
-      <div class="lang-sw">
-        <button onclick="setLang('en')" class="active" id="btn-en">EN</button>
-        <button onclick="setLang('de')" id="btn-de">DE</button>
-        <button onclick="setLang('es')" id="btn-es">ES</button>
-        <button onclick="setLang('fr')" id="btn-fr">FR</button>
-      </div>
-      <a href="https://pickleball.global/tour/wpc-series----hannover-open-2528" target="_blank" class="nav-cta" id="nav-cta-btn">Register Now</a>
-    </div>
+    <a href="https://pickleball.global/tour/wpc-series----hannover-open-2528" target="_blank" class="nav-cta">Register Now</a>
   </div>
 </nav>
 
@@ -183,11 +170,7 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
       <span>Tier 3</span>
       <span>EID 2528</span>
     </div>
-    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(220,60,40,.15);border:1px solid rgba(220,60,40,.35);border-radius:6px;padding:6px 14px;margin-bottom:14px">
-      <div style="width:7px;height:7px;border-radius:50%;background:#e03c28;animation:pulse 2s infinite;flex-shrink:0"></div>
-      <span id="urgency-txt" style="font-size:13px;font-weight:700;color:#e03c28">Limited to 150 players — register before spots fill up</span>
-    </div>
-    <h1>WPC Germany<br><span>Hannover Open</span></h1>
+    <h1>WPC Series<br><span>Hannover Open</span></h1>
     <p class="hero-sub">World Pickleball Championship</p>
     <p class="hero-date"><strong>26 – 29 November 2026</strong> &nbsp;·&nbsp; TennisBase Hannover, Germany</p>
     <div class="hero-fee">
@@ -196,7 +179,7 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
     <div class="hero-stats">
       <div class="hstat"><div class="hstat-num">4</div><div class="hstat-lbl">Age Groups</div></div>
       <div class="hstat"><div class="hstat-num">4 Days</div><div class="hstat-lbl">26–29 Nov 2026</div></div>
-      <div class="hstat" style="border-color:rgba(220,60,40,.4);background:rgba(220,60,40,.08)"><div class="hstat-num" style="color:#e03c28">150</div><div class="hstat-lbl" id="stat-players">Players</div></div>
+      <div class="hstat"><div class="hstat-num">300+</div><div class="hstat-lbl">Players</div></div>
       <div class="hstat"><div class="hstat-num">Prize Money</div><div class="hstat-lbl">Open Division only</div></div>
     </div>
     <div class="hero-btns">
@@ -335,7 +318,7 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
         <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-bottom:8px">Open Division</div>
         <div style="font-size:28px;font-weight:900;color:var(--text);margin-bottom:4px">EUR 55</div>
         <div style="font-size:12px;color:var(--muted);margin-bottom:12px">per category</div>
-        <div style="font-size:13px;color:var(--muted);line-height:1.6">Prize money EUR 10,000. All age groups: +19, +50, +60, Juniors. No skill restriction.</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.6">Prize money eligible. All age groups: +19, +50, +60, Juniors. No skill restriction.</div>
       </div>
       <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:22px 24px;position:relative;overflow:hidden">
         <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#c8a840"></div>
@@ -378,25 +361,25 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
       </div>
 
       <div class="venue-card">
-        <div class="venue-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="var(--green)" viewBox="0 0 16 16"><path d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm3 2h6v2H5V3zm0 3h6v2H5V6zm0 3h6v2H5V9z"/></svg></div>
+        <div class="venue-icon">🏟️</div>
         <h4>Professional Facility</h4>
         <p>Federal Training Base with multiple indoor courts, changing rooms, and full match infrastructure. Used by German national tennis programs — now hosting WPC Series Europe.</p>
       </div>
 
       <div class="venue-card">
-        <div class="venue-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="var(--green)" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></div>
+        <div class="venue-icon">📍</div>
         <h4>Easy to Reach</h4>
         <p>Hannover is one of Germany's best-connected cities. Direct rail links from Berlin, Hamburg, Frankfurt, Cologne and Munich. Hannover Airport with European connections.</p>
       </div>
 
       <div class="venue-card">
-        <div class="venue-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="var(--green)" viewBox="0 0 16 16"><path d="M1 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm2 0v12h3v-3h4v3h3V2H3zm2 2h2v2H5V4zm0 3h2v2H5V7zm3-3h2v2H8V4zm0 3h2v2H8V7z"/></svg></div>
+        <div class="venue-icon">🏨</div>
         <h4>Accommodation</h4>
         <p>Wide range of hotels in Hannover city centre. Multiple options 5–20 minutes from the venue by public transport or taxi.</p>
       </div>
 
       <div class="venue-card">
-        <div class="venue-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="var(--green)" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49z"/></svg></div>
+        <div class="venue-icon">🌍</div>
         <h4>International Field</h4>
         <p>WPC Series Europe tournaments consistently attract 20–30 nations with fewer than 50% of players from the host country. Hannover will be no different.</p>
       </div>
@@ -433,7 +416,7 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
             <div style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:12px">
               Book by <strong style="color:var(--text)">e-mail only</strong> and mention <strong style="color:var(--text)">DTB</strong> to receive the tournament rate. Do not book via booking platforms.
             </div>
-            <a href="mailto:info@hotel-bischofshol.de?subject=WPC%20Germany%20Hannover%20Open%202026%20-%20DTB%20Special%20Rate&body=Dear%20Hotel%20Bischofshol%20Team%2C%0A%0AI%20am%20a%20participant%20of%20the%20WPC%20Series%20-%20Hannover%20Open%202026%20%2826-29%20November%202026%29%20at%20TennisBase%20Hannover%20and%20would%20like%20to%20book%20a%20room%20at%20the%20DTB%20special%20rate%20of%20EUR%2070%20per%20night%20including%20breakfast.%0A%0APlease%20confirm%20availability%20for%20the%20following%20dates%3A%0A%0ACheck-in%3A%20%20%5BPLEASE%20ENTER%20DATE%5D%0ACheck-out%3A%20%5BPLEASE%20ENTER%20DATE%5D%0A%0ANumber%20of%20guests%3A%20%5B1%20/%202%5D%0ARoom%20type%3A%20%5BSingle%20/%20Double%5D%0A%0AI%20am%20aware%20that%20the%20city%20tax%20%28Kurtaxe%29%20will%20be%20charged%20separately%20upon%20arrival.%0A%0AKind%20regards%2C%0A%5BYOUR%20NAME%5D%0A%5BYOUR%20PHONE%20NUMBER%5D" id="hotel-email-btn" style="display:inline-block;font-size:13px;font-weight:700;color:var(--white);background:var(--green);border-radius:var(--rs);padding:9px 18px;text-decoration:none"><span id="hotel-btn-label">Book by E-Mail (DTB Rate)</a>
+            <a href="mailto:info@hotel-bischofshol.de?subject=WPC%20Hannover%20Open%202026%20-%20DTB%20Rate" style="display:inline-block;font-size:13px;font-weight:700;color:var(--white);background:var(--green);border-radius:var(--rs);padding:9px 18px;text-decoration:none">Book by E-Mail (DTB Rate)</a>
           </div>
         </div>
       </div>
@@ -449,9 +432,14 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
     <div class="section-title">WPC Hannover Open <span>Partners</span></div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
       <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green)" id="tnb-label">Official Host Organization</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green)">Venue Partner</div>
         <img src="data:image/jpeg;base64,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" alt="TNB — Tennisverband Niedersachsen-Bremen" style="height:52px;width:auto;object-fit:contain;align-self:flex-start">
         <div style="font-size:13px;color:var(--muted);line-height:1.6">Official Federal Training Base (Bundesstützpunkt) of the German Tennis Federation. One of four DTB national centres in Germany. Venue of WPC Hannover Open 2026.</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--green)">Court System</div>
+        <div style="font-size:17px;font-weight:800">CertiCourt</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.6">The only WPC-certified modular court system. Installed at all WPC Series Europe events. certicourt.com</div>
       </div>
       <div style="background:var(--white);border:1.5px solid #1a1a2e;border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden">
         <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#1a1a2e,#3a3a6e)"></div>
@@ -473,93 +461,22 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
   <!-- REGISTER -->
   <div class="register-block">
     <div class="eid">EID 2528 · WPC Series Europe</div>
-    <h2 id="reg-h2">Register Now</h2>
-    <p id="reg-p">Only 150 spots available. Registration opens 09 September 2026 on Pickleball Global.</p>
+    <h2>Register Now</h2>
+    <p>Registration opens 09 September 2026 on Pickleball Global.</p>
     <p class="fee-note">Open: <strong>EUR 55</strong> / category &nbsp;·&nbsp; Skill 4.5 / 3.5: <strong>EUR 45</strong> first + <strong>EUR 30</strong> each additional &nbsp;·&nbsp; Prize money: Open Division only</p>
-    <a href="https://pickleball.global/tour/wpc-series----hannover-open-2528" target="_blank" class="btn-reg" id="reg-btn">Register on Pickleball Global</a>
+    <a href="https://pickleball.global/tour/wpc-series----hannover-open-2528" target="_blank" class="btn-reg">Register on Pickleball Global</a>
     <p class="reg-note">Organizer: Pickleball Global &nbsp;·&nbsp; Tournament Tier 3</p>
   </div>
 
   <!-- PARTNER BAR -->
-  <!-- MAGAZINE SECTION -->
-  <div style="background:var(--dark);border-radius:var(--r);padding:24px 28px;margin-top:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
-    <div>
-      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:6px">WPC Series Magazine</div>
-      <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:4px">The People Behind the Game</div>
-      <div style="font-size:13px;color:rgba(255,255,255,.5);line-height:1.5">Issue #1 — Alba Edition. Captains, comebacks and the families who travel together.<br>Free to read. Published by WPC Series Europe.</div>
-    </div>
-    <a href="https://wpc-magazine.com/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;font-size:14px;font-weight:700;padding:12px 24px;border-radius:var(--rs);text-decoration:none;white-space:nowrap;flex-shrink:0">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.966c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/></svg>
-      <span id="mag-btn-label">Read the Magazine</span>
-    </a>
-  </div>
-
   <div class="footer-bar">
     <span class="lbl">Official Partners</span>
     <span class="partner-badge">TNB — TennisBase Hannover</span>
     <span class="partner-badge">Wingfield — Official Tech Partner</span>
     <span class="partner-badge">WPC Series Europe</span>
+    <span class="partner-badge">CertiCourt — Official Court System</span>
   </div>
 
 </div>
-
-<script>
-const T = {"en": {"nav_links": ["Schedule", "Categories", "Venue"], "nav_cta": "Register Now", "urgency": "Limited to 150 players — register before spots fill up", "stat_players": "Spots only — register fast", "reg_h2": "Register Now", "reg_p": "Only 150 spots available. Registration opens 09 September 2026 on Pickleball Global.", "reg_btn": "Register on Pickleball Global", "hotel_btn": "Book by E-Mail (DTB Rate)", "hotel_mailto": "mailto:info@hotel-bischofshol.de?subject=WPC%20Germany%20Hannover%20Open%202026%20-%20DTB%20Special%20Rate&body=Dear%20Hotel%20Bischofshol%20Team%2C%0A%0AI%20am%20a%20participant%20of%20the%20WPC%20Series%20-%20Hannover%20Open%202026%20%2826-29%20November%202026%29%20at%20TennisBase%20Hannover%20and%20would%20like%20to%20book%20a%20room%20at%20the%20DTB%20special%20rate%20of%20EUR%2070%20per%20night%20including%20breakfast.%0A%0APlease%20confirm%20availability%20for%20the%20following%20dates%3A%0A%0ACheck-in%3A%20%20%5BPLEASE%20ENTER%20DATE%5D%0ACheck-out%3A%20%5BPLEASE%20ENTER%20DATE%5D%0A%0ANumber%20of%20guests%3A%20%5B1%20/%202%5D%0ARoom%20type%3A%20%5BSingle%20/%20Double%5D%0A%0AI%20am%20aware%20that%20the%20city%20tax%20%28Kurtaxe%29%20will%20be%20charged%20separately%20upon%20arrival.%0A%0AKind%20regards%2C%0A%5BYOUR%20NAME%5D%0A%5BYOUR%20PHONE%20NUMBER%5D"}, "de": {"nav_links": ["Zeitplan", "Kategorien", "Venue"], "nav_cta": "Jetzt anmelden", "urgency": "Nur 150 Startplätze — jetzt schnell anmelden", "stat_players": "Plätze — schnell anmelden", "reg_h2": "Jetzt anmelden", "reg_p": "Nur 150 Startplätze verfügbar. Anmeldung ab 09. September 2026 auf Pickleball Global.", "reg_btn": "Auf Pickleball Global anmelden", "hotel_btn": "Per E-Mail buchen (DTB-Rate)", "hotel_mailto": "mailto:info@hotel-bischofshol.de?subject=WPC%20Germany%20Hannover%20Open%202026%20-%20DTB%20Sonderpreis&body=Sehr%20geehrtes%20Team%20des%20Hotel%20Bischofshol%2C%0A%0Aich%20nehme%20am%20WPC%20Series%20-%20Hannover%20Open%202026%20%2826.-29.%20November%202026%29%20in%20der%20TennisBase%20Hannover%20teil%20und%20moechte%20ein%20Zimmer%20zum%20DTB-Sonderpreis%20von%2070%20EUR%20pro%20Nacht%20inklusive%20Fruehstueck%20buchen.%0A%0ABitte%20bestaetigen%20Sie%20die%20Verfuegbarkeit%20fuer%20folgende%20Daten%3A%0A%0AAnreise%3A%20%20%5BDATUM%20BITTE%20EINTRAGEN%5D%0AAbreise%3A%20%20%5BDATUM%20BITTE%20EINTRAGEN%5D%0A%0AAnzahl%20Personen%3A%20%5B1%20/%202%5D%0AZimmertyp%3A%20%20%20%20%20%20%20%5BEinzelzimmer%20/%20Doppelzimmer%5D%0A%0AIch%20bin%20damit%20einverstanden%2C%20dass%20die%20Kurtaxe%20separat%20vor%20Ort%20berechnet%20wird.%0A%0AMit%20freundlichen%20Gruessen%2C%0A%5BIHR%20NAME%5D%0A%5BIHRE%20TELEFONNUMMER%5D"}, "es": {"nav_links": ["Programa", "Categorias", "Sede"], "nav_cta": "Inscribirse", "urgency": "Solo 150 plazas — inscríbete antes de que se agoten", "stat_players": "Plazas — inscríbete ya", "reg_h2": "Inscribirse ahora", "reg_p": "Solo 150 plazas disponibles. Inscripciones abiertas desde el 09 de septiembre de 2026.", "reg_btn": "Inscribirse en Pickleball Global", "hotel_btn": "Reservar por e-mail (tarifa DTB)", "hotel_mailto": "mailto:info@hotel-bischofshol.de?subject=WPC%20Germany%20Hannover%20Open%202026%20-%20Tarifa%20especial%20DTB&body=Estimado%20equipo%20del%20Hotel%20Bischofshol%2C%0A%0Asoy%20participante%20del%20WPC%20Series%20-%20Hannover%20Open%202026%20%2826-29%20de%20noviembre%20de%202026%29%20en%20la%20TennisBase%20Hannover%20y%20deseo%20reservar%20una%20habitacion%20a%20la%20tarifa%20especial%20DTB%20de%2070%20EUR%20por%20noche%20con%20desayuno%20incluido.%0A%0APor%20favor%2C%20confirme%20la%20disponibilidad%20para%20las%20siguientes%20fechas%3A%0A%0AEntrada%3A%20%20%5BINDICAR%20FECHA%5D%0ASalida%3A%20%20%20%5BINDICAR%20FECHA%5D%0A%0ANumero%20de%20huespedes%3A%20%5B1%20/%202%5D%0ATipo%20de%20habitacion%3A%20%20%5BIndividual%20/%20Doble%5D%0A%0AEntiendo%20que%20la%20tasa%20de%20ciudad%20se%20cobrara%20por%20separado%20al%20llegar.%0A%0AUn%20cordial%20saludo%2C%0A%5BSU%20NOMBRE%5D%0A%5BSU%20NUMERO%20DE%20TELEFONO%5D"}, "fr": {"nav_links": ["Programme", "Catégories", "Lieu"], "nav_cta": "S'inscrire", "urgency": "Limité à 150 joueurs — inscrivez-vous avant qu'il soit trop tard", "stat_players": "Places — inscrivez-vous vite", "reg_h2": "S'inscrire maintenant", "reg_p": "Seulement 150 places disponibles. Inscriptions ouvertes le 09 septembre 2026.", "reg_btn": "S'inscrire sur Pickleball Global", "hotel_btn": "Réserver par e-mail (tarif DTB)", "hotel_mailto": "mailto:info@hotel-bischofshol.de?subject=WPC%20Germany%20Hannover%20Open%202026%20-%20Tarif%20special%20DTB&body=Madame%2C%20Monsieur%2C%0A%0Aje%20suis%20participant%28e%29%20au%20WPC%20Series%20-%20Hannover%20Open%202026%20%2826-29%20novembre%202026%29%20a%20la%20TennisBase%20Hannover%20et%20souhaite%20reserver%20une%20chambre%20au%20tarif%20special%20DTB%20de%2070%20EUR%20par%20nuit%20petit-dejeuner%20inclus.%0A%0APourriez-vous%20confirmer%20la%20disponibilite%20pour%20les%20dates%20suivantes%20%3A%0A%0AArrivee%20%3A%20%20%5BINDIQUER%20LA%20DATE%5D%0ADepart%20%3A%20%20%20%5BINDIQUER%20LA%20DATE%5D%0A%0ANombre%20de%20personnes%20%3A%20%5B1%20/%202%5D%0AType%20de%20chambre%20%3A%20%20%20%20%20%5BSimple%20/%20Double%5D%0A%0AJe%20comprends%20que%20la%20taxe%20de%20sejour%20sera%20facturee%20separement%20a%20l%27arrivee.%0A%0ACordialement%2C%0A%5BVOTRE%20NOM%5D%0A%5BVOTRE%20NUMERO%20DE%20TELEPHONE%5D"}};
-let currentLang = 'en';
-
-function setLang(lang) {
-  currentLang = lang;
-  const t = T[lang];
-
-  // Nav links
-  const navLinks = document.querySelectorAll('.nav-links a');
-  t.nav_links.forEach((txt, i) => { if(navLinks[i]) navLinks[i].textContent = txt; });
-
-  // Nav CTA
-  const cta = document.getElementById('nav-cta-btn');
-  if(cta) cta.textContent = t.nav_cta;
-
-  // Urgency banner
-  const urg = document.getElementById('urgency-txt');
-  if(urg) urg.textContent = t.urgency;
-
-  // Stat
-  const sp = document.getElementById('stat-players');
-  if(sp) sp.textContent = t.stat_players;
-
-  // Register block
-  const rh = document.getElementById('reg-h2');
-  if(rh) rh.textContent = t.reg_h2;
-  const rp = document.getElementById('reg-p');
-  if(rp) rp.textContent = t.reg_p;
-  const rb = document.getElementById('reg-btn');
-  if(rb) rb.textContent = t.reg_btn;
-
-  // Hotel email button
-  const hb = document.getElementById('hotel-email-btn');
-  if(hb) {
-    hb.href = t.hotel_mailto;
-    hb.textContent = t.hotel_btn;
-  }
-
-  // Active button
-  ['en','de','es','fr'].forEach(l => {
-    const btn = document.getElementById('btn-' + l);
-    if(btn) btn.classList.toggle('active', l === lang);
-  });
-
-  document.documentElement.lang = lang;
-
-  // TNB label
-  const tnbLabels = {en:'Official Host Organization', de:'Offizieller Ausrichter', es:'Organizador oficial', fr:'Organisateur officiel'};
-  const tnbEl = document.getElementById('tnb-label');
-  if(tnbEl) tnbEl.textContent = tnbLabels[lang];
-
-  // Magazine button
-  const magLabels = {en:'Read the Magazine', de:'Magazin lesen', es:'Leer la revista', fr:'Lire le magazine'};
-  const magEl = document.getElementById('mag-btn-label');
-  if(magEl) magEl.textContent = magLabels[lang];
-}
-</script>
 </body>
 </html>
