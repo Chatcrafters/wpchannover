@@ -559,6 +559,71 @@ function setLang(lang) {
   });
 
   document.documentElement.lang = lang;
+  // Schedule translations
+  const schedData = {
+    en: {
+      d1lbl:'Day 1 — Thu', d1date:'26 Nov',
+      d1ev:'<strong>Afternoon (from ~14:00)</strong><br>+60 Open: Singles, Doubles &amp; Mixed &nbsp;&middot;&nbsp; Juniors: Singles &amp; Doubles',
+      d2lbl:'Day 2 — Fri', d2date:'27 Nov',
+      d2ev:'<strong>Morning:</strong> Singles <strong>Open</strong> &amp; Singles <strong>Skill 3.5</strong><br><strong>Afternoon:</strong> Singles <strong>Skill 4.5</strong>',
+      d3lbl:'Day 3 — Sat', d3date:'28 Nov',
+      d3ev:'<strong>Morning:</strong> Doubles <strong>Open</strong> &amp; Doubles <strong>Skill 3.5</strong><br><strong>Afternoon:</strong> Doubles <strong>Skill 4.5</strong>',
+      d4lbl:'Day 4 — Sun', d4date:'29 Nov',
+      d4ev:'<strong>Morning:</strong> Mixed <strong>Open</strong> &amp; Mixed <strong>Skill 3.5</strong> + Finals &amp; Award Ceremony<br><strong>Afternoon:</strong> Mixed <strong>Skill 4.5</strong> + Finals &amp; Award Ceremony',
+      snote:'<strong>Thu 26 Nov:</strong> +60 Open &amp; Juniors from approx. 14:00 &nbsp;|&nbsp; <strong>Fri&ndash;Sun:</strong> Morning = Open + Skill 3.5 &nbsp;&middot;&nbsp; Afternoon = Skill 4.5<br><strong>Prize money awarded in Open Division only</strong> &nbsp;&middot;&nbsp; Skill 4.5 (DUPR 4.0&ndash;4.99) &middot; Skill 3.5 (DUPR under 4.0)'
+    },
+    de: {
+      d1lbl:'Tag 1 — Do.', d1date:'26. Nov.',
+      d1ev:'<strong>Nachmittags (ab ~14:00 Uhr)</strong><br>+60 Open: Singles, Doppel &amp; Mixed &nbsp;&middot;&nbsp; Junioren: Singles &amp; Doppel',
+      d2lbl:'Tag 2 — Fr.', d2date:'27. Nov.',
+      d2ev:'<strong>Vormittags:</strong> Singles <strong>Open</strong> &amp; Singles <strong>Skill 3.5</strong><br><strong>Nachmittags:</strong> Singles <strong>Skill 4.5</strong>',
+      d3lbl:'Tag 3 — Sa.', d3date:'28. Nov.',
+      d3ev:'<strong>Vormittags:</strong> Doppel <strong>Open</strong> &amp; Doppel <strong>Skill 3.5</strong><br><strong>Nachmittags:</strong> Doppel <strong>Skill 4.5</strong>',
+      d4lbl:'Tag 4 — So.', d4date:'29. Nov.',
+      d4ev:'<strong>Vormittags:</strong> Mixed <strong>Open</strong> &amp; Mixed <strong>Skill 3.5</strong> + Finals &amp; Siegerehrung<br><strong>Nachmittags:</strong> Mixed <strong>Skill 4.5</strong> + Finals &amp; Siegerehrung',
+      snote:'<strong>Do. 26. Nov.:</strong> +60 Open &amp; Junioren ab ca. 14:00 Uhr &nbsp;|&nbsp; <strong>Fr.&ndash;So.:</strong> Vormittags = Open + Skill 3.5 &nbsp;&middot;&nbsp; Nachmittags = Skill 4.5<br><strong>Preisgeld nur in der Open Division</strong> &nbsp;&middot;&nbsp; Skill 4.5 (DUPR 4,0&ndash;4,99) &middot; Skill 3.5 (DUPR unter 4,0)'
+    },
+    es: {
+      d1lbl:'D\u00eda 1 — Jue.', d1date:'26 nov.',
+      d1ev:'<strong>Tarde (desde ~14:00)</strong><br>+60 Open: Singles, Dobles y Mixtos &nbsp;&middot;&nbsp; Juniors: Singles y Dobles',
+      d2lbl:'D\u00eda 2 — Vie.', d2date:'27 nov.',
+      d2ev:'<strong>Ma\u00f1ana:</strong> Singles <strong>Open</strong> y Singles <strong>Skill 3.5</strong><br><strong>Tarde:</strong> Singles <strong>Skill 4.5</strong>',
+      d3lbl:'D\u00eda 3 — S\u00e1b.', d3date:'28 nov.',
+      d3ev:'<strong>Ma\u00f1ana:</strong> Dobles <strong>Open</strong> y Dobles <strong>Skill 3.5</strong><br><strong>Tarde:</strong> Dobles <strong>Skill 4.5</strong>',
+      d4lbl:'D\u00eda 4 — Dom.', d4date:'29 nov.',
+      d4ev:'<strong>Ma\u00f1ana:</strong> Mixtos <strong>Open</strong> y Mixtos <strong>Skill 3.5</strong> + Finales y ceremonia<br><strong>Tarde:</strong> Mixtos <strong>Skill 4.5</strong> + Finales y ceremonia',
+      snote:'<strong>Jue. 26 nov.:</strong> +60 Open y Juniors desde aprox. las 14:00 &nbsp;|&nbsp; <strong>Vie.&ndash;Dom.:</strong> Ma\u00f1ana = Open + Skill 3.5 &nbsp;&middot;&nbsp; Tarde = Skill 4.5<br><strong>Premio econ\u00f3mico solo en Open Division</strong> &nbsp;&middot;&nbsp; Skill 4.5 (DUPR 4,0&ndash;4,99) &middot; Skill 3.5 (DUPR menos de 4,0)'
+    },
+    fr: {
+      d1lbl:'Jour 1 — Jeu.', d1date:'26 nov.',
+      d1ev:'<strong>Apr\u00e8s-midi (d\u00e8s ~14h00)</strong><br>+60 Open\u00a0: Simple, Double et Mixte &nbsp;&middot;&nbsp; Juniors\u00a0: Simple et Double',
+      d2lbl:'Jour 2 — Ven.', d2date:'27 nov.',
+      d2ev:'<strong>Matin\u00a0:</strong> Simple <strong>Open</strong> et Simple <strong>Skill 3.5</strong><br><strong>Apr\u00e8s-midi\u00a0:</strong> Simple <strong>Skill 4.5</strong>',
+      d3lbl:'Jour 3 — Sam.', d3date:'28 nov.',
+      d3ev:'<strong>Matin\u00a0:</strong> Double <strong>Open</strong> et Double <strong>Skill 3.5</strong><br><strong>Apr\u00e8s-midi\u00a0:</strong> Double <strong>Skill 4.5</strong>',
+      d4lbl:'Jour 4 — Dim.', d4date:'29 nov.',
+      d4ev:'<strong>Matin\u00a0:</strong> Mixte <strong>Open</strong> et Mixte <strong>Skill 3.5</strong> + Finales et remise des prix<br><strong>Apr\u00e8s-midi\u00a0:</strong> Mixte <strong>Skill 4.5</strong> + Finales et remise des prix',
+      snote:'<strong>Jeu. 26 nov.\u00a0:</strong> +60 Open et Juniors d\u00e8s environ 14h00 &nbsp;|&nbsp; <strong>Ven.&ndash;Dim.\u00a0:</strong> Matin = Open + Skill 3.5 &nbsp;&middot;&nbsp; Apr\u00e8s-midi = Skill 4.5<br><strong>Dotation uniquement en Open Division</strong> &nbsp;&middot;&nbsp; Skill 4.5 (DUPR 4,0&ndash;4,99) &middot; Skill 3.5 (DUPR inf\u00e9rieur \u00e0 4,0)'
+    }
+  };
+  const sd = schedData[lang];
+  const dl = document.querySelectorAll('.sched-day-label');
+  const dd = document.querySelectorAll('.sched-date');
+  const de = document.querySelectorAll('.sched-events');
+  const sn = document.querySelector('.schedule-note');
+  if(dl[0]) dl[0].innerHTML = sd.d1lbl;
+  if(dd[0]) dd[0].innerHTML = sd.d1date;
+  if(de[0]) de[0].innerHTML = sd.d1ev;
+  if(dl[1]) dl[1].innerHTML = sd.d2lbl;
+  if(dd[1]) dd[1].innerHTML = sd.d2date;
+  if(de[1]) de[1].innerHTML = sd.d2ev;
+  if(dl[2]) dl[2].innerHTML = sd.d3lbl;
+  if(dd[2]) dd[2].innerHTML = sd.d3date;
+  if(de[2]) de[2].innerHTML = sd.d3ev;
+  if(dl[3]) dl[3].innerHTML = sd.d4lbl;
+  if(dd[3]) dd[3].innerHTML = sd.d4date;
+  if(de[3]) de[3].innerHTML = sd.d4ev;
+  if(sn) sn.innerHTML = sd.snote;
 
   // Play More block
   const pmLabels   = {en:'WPC Advantage', de:'WPC Vorteil', es:'Ventaja WPC', fr:'Avantage WPC'};
@@ -600,6 +665,7 @@ function setLang(lang) {
 </script>
 </body>
 </html>
+
 
 
 
