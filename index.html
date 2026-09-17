@@ -299,6 +299,21 @@ hr.sect{border:none;border-top:1px solid var(--border);margin:52px 0 0}
         </div>
       </div>
     </div>
+
+    <!-- PLAY MORE BLOCK -->
+    <div style="margin-top:16px;background:#0e1a09;border-radius:14px;padding:22px 24px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#4a9c1c;margin-bottom:8px" id="pm-label">WPC Advantage</div>
+      <div style="font-size:17px;font-weight:800;color:#fff;margin-bottom:10px" id="pm-title">Play More. Learn More. Grow More.</div>
+      <div style="font-size:13px;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:14px" id="pm-text">At WPC Germany &mdash; Hannover Open, every player can compete in <strong style="color:#fff">two categories on the same day</strong> &mdash; their own division and one level up. Compete where you belong and challenge yourself at the next level. This is one of the things our players love most about the WPC Series.</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:10px 16px;font-size:13px;color:rgba(255,255,255,.85)" id="pm-tip1">
+          <strong style="color:#4a9c1c">Skill 3.5</strong> players &rarr; Morning (3.5) + Afternoon (4.5)
+        </div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:10px 16px;font-size:13px;color:rgba(255,255,255,.85)" id="pm-tip2">
+          <strong style="color:#4a9c1c">Skill 4.5</strong> players &rarr; Afternoon (4.5) + Morning (Open)
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- CATEGORIES -->
@@ -558,6 +573,33 @@ function setLang(lang) {
 
   document.documentElement.lang = lang;
 
+  // Play More block
+  const pmLabels   = {en:'WPC Advantage', de:'WPC Vorteil', es:'Ventaja WPC', fr:'Avantage WPC'};
+  const pmTitles   = {en:'Play More. Learn More. Grow More.', de:'Mehr spielen. Mehr lernen. Mehr wachsen.', es:'Juega más. Aprende más. Crece más.', fr:'Jouez plus. Apprenez plus. Progressez plus.'};
+  const pmTexts    = {
+    en: 'At WPC Germany \u2014 Hannover Open, every player can compete in <strong style="color:#fff">two categories on the same day</strong> \u2014 their own division and one level up. Compete where you belong and challenge yourself at the next level. This is one of the things our players love most about the WPC Series.',
+    de: 'Beim WPC Germany \u2014 Hannover Open kann jeder Spieler <strong style="color:#fff">zwei Kategorien am selben Tag</strong> spielen \u2014 die eigene Division und eine Stufe h\u00f6her. Spiele dort, wo du hingehörst, und fordere dich auf dem n\u00e4chsten Level heraus. Das lieben unsere Spieler an der WPC Series.',
+    es: 'En el WPC Germany \u2014 Hannover Open, cada jugador puede competir en <strong style="color:#fff">dos categor\u00edas el mismo d\u00eda</strong> \u2014 su propia divisi\u00f3n y un nivel superior. Compite donde perteneces y desaf\u00edate al siguiente nivel. Esto es lo que m\u00e1s valoran nuestros jugadores de la WPC Series.',
+    fr: 'Au WPC Germany \u2014 Hannover Open, chaque joueur peut concourir dans <strong style="color:#fff">deux cat\u00e9gories le m\u00eame jour</strong> \u2014 sa propre division et un niveau sup\u00e9rieur. Jouez l\u00e0 o\u00f9 vous \u00eates \u00e0 votre place et relevez le d\u00e9fi au niveau suivant. C\u2019est l\u2019un des aspects les plus appr\u00e9ci\u00e9s de la WPC Series.'
+  };
+  const pmTip1s    = {
+    en: '<strong style="color:#4a9c1c">Skill 3.5</strong> players &rarr; Morning (3.5) + Afternoon (4.5)',
+    de: '<strong style="color:#4a9c1c">Skill 3.5</strong>-Spieler &rarr; Vormittags (3.5) + Nachmittags (4.5)',
+    es: 'Jugadores <strong style="color:#4a9c1c">Skill 3.5</strong> &rarr; Ma\u00f1ana (3.5) + Tarde (4.5)',
+    fr: 'Joueurs <strong style="color:#4a9c1c">Skill 3.5</strong> &rarr; Matin (3.5) + Apr\u00e8s-midi (4.5)'
+  };
+  const pmTip2s    = {
+    en: '<strong style="color:#4a9c1c">Skill 4.5</strong> players &rarr; Afternoon (4.5) + Morning (Open)',
+    de: '<strong style="color:#4a9c1c">Skill 4.5</strong>-Spieler &rarr; Nachmittags (4.5) + Vormittags (Open)',
+    es: 'Jugadores <strong style="color:#4a9c1c">Skill 4.5</strong> &rarr; Tarde (4.5) + Ma\u00f1ana (Open)',
+    fr: 'Joueurs <strong style="color:#4a9c1c">Skill 4.5</strong> &rarr; Apr\u00e8s-midi (4.5) + Matin (Open)'
+  };
+  const pmL  = document.getElementById('pm-label');   if(pmL)  pmL.textContent  = pmLabels[lang];
+  const pmTi = document.getElementById('pm-title');   if(pmTi) pmTi.textContent = pmTitles[lang];
+  const pmTx = document.getElementById('pm-text');    if(pmTx) pmTx.innerHTML   = pmTexts[lang];
+  const pm1  = document.getElementById('pm-tip1');    if(pm1)  pm1.innerHTML    = pmTip1s[lang];
+  const pm2  = document.getElementById('pm-tip2');    if(pm2)  pm2.innerHTML    = pmTip2s[lang];
+
   // TNB label
   const tnbLabels = {en:'Official Host Organization', de:'Offizieller Ausrichter', es:'Organizador oficial', fr:'Organisateur officiel'};
   const tnbEl = document.getElementById('tnb-label');
@@ -571,6 +613,7 @@ function setLang(lang) {
 </script>
 </body>
 </html>
+
 
 
 
